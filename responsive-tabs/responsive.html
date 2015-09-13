@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Tabs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script src="../bower_components/jquery/dist/jquery.js"></script>
+</head>
+<body style="background: #87E0FD">
+
+<div id="tabs">
+  <nav>
+    <ul>
+      <li><a href="#tab-1">TAB 1</a></li>
+      <li><a href="#tab-2">TAB 2</a></li>
+      <li><a href="#tab-3">TAB 3</a></li>
+    </ul>
+  </nav>
+  <div id="tab-1">
+    <h2>Tab 1</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum non iure magnam dolores earum nemo quo tempora ab unde! Nesciunt ea iste impedit suscipit cupiditate quam earum explicabo quas veniam doloribus sed aut aliquam repellendus deleniti laudantium molestias fuga nihil quidem voluptatum atque sapiente perferendis facilis. Tempora mollitia odio?
+  </div>
+  
+  <div id="tab-2">
+    <h2>Tab 2</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur est natus esse minima nihil quidem tenetur alias pariatur. Obcaecati repudiandae temporibus provident sapiente iure doloribus praesentium voluptates dolores quia eos velit fugit cum ipsam. Deleniti fugiat maxime vel tempore illum esse illo fugit quam recusandae aut aperiam omnis at quaerat!
+  </div>
+  
+  <div id="tab-3">
+    <h2>Tab 3</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores numquam cupiditate aliquam quisquam repellendus fugit eaque asperiores voluptatem ut accusamus soluta corporis in facere quae provident itaque magni eum repellat ducimus dolore. Beatae aperiam accusamus at voluptatem ad sunt mollitia perspiciatis tempora numquam rerum aliquam deserunt illum necessitatibus nisi omnis.
+  </div>
+ 
+</div>
+<script src="js/responsive.js"></script>
+<script>
+	$(function() {
+		$( "#tabs" ).tabs();   
+
+    /*$( "#tabs" ).tabs({
+          active: 2
+    });*/
+	});
+</script>
+</body>
+</html>

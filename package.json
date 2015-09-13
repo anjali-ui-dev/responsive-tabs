@@ -1,0 +1,16 @@
+{
+  "name": "ResponsiveTab",
+  "version": "0.0.2",
+  "description": "ResponsiveTab",
+  "main": "responsive.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anjali8jain@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.5.2",
+    "grunt": "^0.4.5",
+    "grunt-serve": "^0.1.6"
+  }
+}

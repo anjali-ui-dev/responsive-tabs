@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.responsive-tabs-container {
+    max-width: 1200px;
+}
+.responsive-tabs-container > div {
+    display         : none;
+    padding         : 1em;
+    background-color: #FFF;
+}
+.responsive-tabs-container > div.active {
+    display: block;
+    color  : #6c6c6c;
+}
+.responsive-tabs ul {
+    list-style   : none;
+    padding      : 0;
+    margin       : 0;
+    max-width    : 1200px;
+    border-bottom: 1px solid white;
+}
+.responsive-tabs li {
+    display: inline-block;
+    padding: 0;
+    background-color: #D8D8D8;
+}
+.responsive-tabs a {
+    display        : inline-block;
+    color          : #6c6c6c;
+    text-decoration: none;
+    padding        : 1.2em;
+    font-weight    : bold;
+}
+.responsive-tabs a:hover {
+    background-color: #E6E6E6;
+    color: #191919;
+}
+.responsive-tabs li > a.active {
+    color       : #191919;
+}
+.responsive-tabs a.active {
+    border          : 1px solid transparent;
+    background-color: white;
+    position        : relative;
+}
+
+@media (max-width: 700px) {
+    .responsive-tabs ul {
+        overflow: hidden;
+        position: relative;
+    }
+    .responsive-tabs ul::after {
+        content       : "☰";
+        position      : absolute;
+        top           : 8px;
+        right         : 15px;
+        z-index       : 2;
+        color         : black;
+        pointer-events: none;
+    }
+    .responsive-tabs ul.open a {
+        position: relative;
+        display : block;
+    }
+    .responsive-tabs li {
+        display: block;
+    }
+    .responsive-tabs a {
+        position: absolute;
+        top     : 0;
+        left    : 0;
+        width   : 100%;
+        color   : #6c6c6c;
+        height  : 100%;
+        border-bottom: 1px solid #6c6c6c;
+        background-color: white;
+    }
+    .responsive-tabs a:hover {
+        background-color: #0AC0FB;
+        color: #191919;
+        border-bottom: 1px solid #6c6c6c;
+    }
+    .responsive-tabs li > a.active {
+        color : #191919;
+        border-bottom: 1px solid #6c6c6c;
+    }
+    .responsive-tabs a.active {
+        z-index    : 1;
+        color      : #191919;
+        font-weight: bold;
+    }
+}
